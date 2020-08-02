@@ -24,7 +24,7 @@
 -    每个机器根据输入决定下一个状态（Mealy）
 
 **JS中的有限状态机（Mealy）**
-(```) 
+```)
     // 每个函数是一个状态
     function state(input) // 函数参数就是输入
     {
@@ -37,12 +37,12 @@
         // 获取输入
         state = state(input); // 把状态机的返回值作为下一个状态
     }
-(```)
+```
 
 2. **不使用有限状态机处理字符串**
 > 思考：在一个字符串中，找到字符“a”
 
-(```)
+```
     function match(string) {
         for(let c of string) {
             if(c == 'a') {
@@ -53,11 +53,11 @@
     }
 
     match('I am Groot.')
-(```)
+```
 
 > 思考：在一个字符串中，找到字符“ab”
 
-(```)
+```
     function match(string) {
         let foundA = false
         for let( c of string) {
@@ -73,11 +73,11 @@
     }
 
     console.log(match('I am abcGroot.'))
-(```)
+```
 
 > 思考：在一个字符串中，找到字符'abcdef'
 
-(```)
+```
     function match(string) {
         let foundA = false
         let foundB = false
@@ -110,10 +110,10 @@
     }
 
     console.log(match('I am abcefGroot.'))
-(```)
+```
 
 3. **使用状态机处理字符串**
-(```)
+```
     function match(string) {
         let state = start
         for(let c of string) {
@@ -175,7 +175,7 @@
     }
 
     console.log('I am ababcdefGroot.')
-(```)
+```
 
 > 思考：我们如何用状态机处理诸如“abcabx”这样的字符串
 
