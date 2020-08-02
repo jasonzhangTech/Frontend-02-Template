@@ -179,7 +179,7 @@
 
 > 思考：我们如何用状态机处理诸如“abcabx”这样的字符串
 
-(```)
+```
     function match(string) {
         let state = start
         for(let c of string) {
@@ -241,13 +241,13 @@
     }
 
     console.log(match('abcabcabx'))
-(```)
+```
 
 > 思考：使用状态机完成“abababx”的处理？
 > 进阶：我们如何使用状态机处理完全未知的pattern？
 > - 参考资料：字符串KMP算法
 
-====
+
 ### HTTP请求
 > URL ===> HTML
 
