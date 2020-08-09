@@ -1,7 +1,7 @@
 <!--
  * @Author: zhy
  * @Date: 2020-06-29 05:44:41
- * @LastEditTime: 2020-08-09 12:56:55
+ * @LastEditTime: 2020-08-09 14:42:24
 -->
 #学习笔记
 
@@ -40,9 +40,9 @@
          -     :not()
    - 声明
    -     key
-         -     Variables:https://www.w3.org/TR/css-variables/
+         -     Variables: https://www.w3.org/TR/css-variables/
          -     properties
-   -     Value(https://www.w3.org/TR/css-values-4/)
+   -     Value https://www.w3.org/TR/css-values-4/
          -     calc
          -     number
          -     length
@@ -61,6 +61,84 @@
    - 实验
 ## CSS选择器
 1. 选择器语法
+   - 简单选择器
+     - *
+     - div svg|a (tagName)
+     - .cls
+     - #id
+     - [attr=value]
+     - :hover
+     - ::before
+   - 复合选择器
+     - <简单选择器><简单选择器><简单选择器>
+     -  div 或者 * 必须写在最前面
+   - 复杂选择器
+     -  <复合选择器><sp><复合选择器>    
+     -  <复合选择器>">"<复合选择器> **父子选择器**
+     -  <复合选择器>"~"<复合选择器> **邻接关系**
+     -  <复合选择器>"+"<复合选择器> **邻接关系**
+     -  <复合选择器>"||"<复合选择器> **选择表格中某一列**
 2. 选择器的优先级
+   - 简单选择器计数
+     - 举例：#id div.a#id {...}
+     - [0,2,1,1]
+     - S = 0 * N³+ 2 * N²+ 1 * N¹+ 1
+     - 取N = 1000000
+     - S = 2000001000001
 3. 伪类
+   - **链接/行为**
+     - :any-link (:any-link = :link :visited + :link)
+     - :link :visited
+     - :hover 
+     - :active
+     - :focus
+     - :target
+   - **树结构**
+     - :empty 是否有子元素
+     - :nth-child() 
+     - :nth-last-child()
+     - :first-child :last-child :only-child
+   - **逻辑型**
+     - :not伪类
+     - :where :has
 4. 伪元素
+   - ::before
+   - ::after
+  ```
+    <div>
+        <::before/>
+        content content content content
+        content content content content
+        content content content content
+        content content content content
+        content content content content
+        content content content content
+        <::after/>
+    </div>
+  ```
+   - ::first-line
+   - ::first-letter
+   ```
+    <div>
+        <::first-letter>c</::first-letter> content content content content
+        content content content content
+        content content content content
+        content content content content
+        content content content content
+        content content content content
+    </div>
+   ```
+   ```
+    <div>
+        <::first-line>content content content content </::first-line>
+        content content content content
+        content content content content
+        content content content content
+        content content content content
+        content content content content
+    </div>
+  ```
+  - **可用属性**
+  ![avatar](./first-line&first-letter.png)
+  
+  
