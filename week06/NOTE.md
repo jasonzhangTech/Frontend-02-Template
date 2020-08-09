@@ -10,7 +10,7 @@
 <!--
  * @Author: zhy
  * @Date: 2020-06-29 05:44:41
- * @LastEditTime: 2020-08-09 14:49:36
+ * @LastEditTime: 2020-08-09 15:03:12
 -->
 #学习笔记
 
@@ -159,5 +159,10 @@
   ```
   - **可用属性**
   ![avatar](./first-line&first-letter.png)
+
+  > **思考：**为什么 first-letter 可以设置 float 之类的，而 first-line 不行呢？
+  > 参考：https://drafts.csswg.org/selectors-3/#first-line 
+  答：first-letter 是在布局完成之后，确定一段文字中的第一个文字，可以对其操作布局时性能开销小；
+    而 first-line 选中的是第一行文字，不同的宽度选中的文字内容不一样，要对其重新布局排版消耗性能大,甚至一些边缘情况里会有 BUG 出现。故 first-letter 可以设置 float 之类的，而 first-line 不行
   
   
