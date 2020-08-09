@@ -2,15 +2,15 @@
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
-- [CSS总论](#css%E6%80%BB%E8%AE%BA)
-- [CSS选择器](#css%E9%80%89%E6%8B%A9%E5%99%A8)
+- [CSS总论](#css总论)
+- [CSS选择器](#css选择器)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 <!--
  * @Author: zhy
  * @Date: 2020-06-29 05:44:41
- * @LastEditTime: 2020-08-09 14:43:55
+ * @LastEditTime: 2020-08-09 14:49:36
 -->
 #学习笔记
 
@@ -22,7 +22,7 @@
    - https://www.w3.org/TR/css-syntax-3/
   
 2. CSS @规则的研究
-   **At-rules**
+   **at-rules**
    - @charset:https://www.w3.org/TR/css-syntax-3/ *声明CSS的字符集*
    - @import:https://www.w3.org/TR/css-cascade-4/ *级联规则*
    - **@media**:https://www.w3.org/TR/css3-conditional/ *查询媒体*
@@ -34,7 +34,7 @@
    - @namespace:https://www.w3.org/TR/css-namespaces-3/
   
 3. CSS规则的结构
-   - 选择器(Selector:*level3:*https://www.w3.org/TR/selectors-3/ *level4:*https://www.w3.org/TR/selectors-4/)
+   - 选择器(Selector: **level3:** https://www.w3.org/TR/selectors-3/ **level4:** https://www.w3.org/TR/selectors-4/)
    -     selector_group
    -     selector
          -     >
@@ -73,7 +73,7 @@
    - variables
    - value
    - 实验
-   - 
+
 ## CSS选择器
 
 1. 选择器语法
