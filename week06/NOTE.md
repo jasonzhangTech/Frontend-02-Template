@@ -1,15 +1,26 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [CSS总论](#css%E6%80%BB%E8%AE%BA)
+- [CSS选择器](#css%E9%80%89%E6%8B%A9%E5%99%A8)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 <!--
  * @Author: zhy
  * @Date: 2020-06-29 05:44:41
- * @LastEditTime: 2020-08-09 14:42:24
+ * @LastEditTime: 2020-08-09 14:43:55
 -->
 #学习笔记
 
 ## CSS总论
+
 1. CSS语法的研究
    > **2.1标准**——CSS总体结构：@charset,@import,rules(@media,@page,rule)
    - https://www.w3.org/TR/CSS21/grammar.html#q25.0
    - https://www.w3.org/TR/css-syntax-3/
+  
 2. CSS @规则的研究
    **At-rules**
    - @charset:https://www.w3.org/TR/css-syntax-3/ *声明CSS的字符集*
@@ -21,6 +32,7 @@
    - **@fontface**:https://www.w3.org/TR/css-fonts-3/ *定义字体*
    - @supports:https://www.w3.org/TR/css3-conditional/ *兼容性检查*
    - @namespace:https://www.w3.org/TR/css-namespaces-3/
+  
 3. CSS规则的结构
    - 选择器(Selector:*level3:*https://www.w3.org/TR/selectors-3/ *level4:*https://www.w3.org/TR/selectors-4/)
    -     selector_group
@@ -47,11 +59,13 @@
          -     number
          -     length
          -     ……
+
 4. 收集标准
    > https://www.w3.org/TR
    - **小实验：** JSON.stringify(Array.prototype.slice.call(document.querySelector('#container').children).filter(e => e.getAttribute('data-tag').match(/css/)).map(e => ({name:e.children[1].innerText, url:e.children[1].children[0].href})))
    - 爬虫工具：
    [css-crawler.js](./css-crawler.js)
+
 5. CSS总论总结
    - CSS语法
    - at-rule
@@ -59,7 +73,9 @@
    - variables
    - value
    - 实验
+   - 
 ## CSS选择器
+
 1. 选择器语法
    - 简单选择器
      - *
@@ -78,6 +94,7 @@
      -  <复合选择器>"~"<复合选择器> **邻接关系**
      -  <复合选择器>"+"<复合选择器> **邻接关系**
      -  <复合选择器>"||"<复合选择器> **选择表格中某一列**
+
 2. 选择器的优先级
    - 简单选择器计数
      - 举例：#id div.a#id {...}
@@ -85,6 +102,7 @@
      - S = 0 * N³+ 2 * N²+ 1 * N¹+ 1
      - 取N = 1000000
      - S = 2000001000001
+
 3. 伪类
    - **链接/行为**
      - :any-link (:any-link = :link :visited + :link)
@@ -101,6 +119,7 @@
    - **逻辑型**
      - :not伪类
      - :where :has
+
 4. 伪元素
    - ::before
    - ::after
