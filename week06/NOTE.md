@@ -1,7 +1,7 @@
 <!--
  * @Author: zhy
  * @Date: 2020-06-29 05:44:41
- * @LastEditTime: 2020-08-09 12:55:59
+ * @LastEditTime: 2020-08-09 12:56:55
 -->
 #学习笔记
 
@@ -25,7 +25,7 @@
    - 选择器(Selector:*level3:*https://www.w3.org/TR/selectors-3/ *level4:*https://www.w3.org/TR/selectors-4/)
    -     selector_group
    -     selector
-   -         >
+         -     >
          -     <sp>
          -     +
          -     ~
