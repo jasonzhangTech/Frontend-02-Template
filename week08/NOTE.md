@@ -20,7 +20,7 @@
 <!--
  * @Author: zhy
  * @Date: 2020-06-29 05:44:41
- * @LastEditTime: 2020-08-23 21:32:16
+ * @LastEditTime: 2020-08-23 21:33:20
  * @LastEditors: Please set LastEditors
 -->
 # 学习笔记
@@ -170,4 +170,4 @@
     - W3C
       - webaudio
       - CG/WG
-  - [全部API分类整理]]('./getAllApis.html')
+  - [全部API分类整理]('./getAllApis.html')
