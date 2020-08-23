@@ -11,7 +11,7 @@
 <!--
  * @Author: zhy
  * @Date: 2020-06-29 05:44:41
- * @LastEditTime: 2020-08-23 13:04:28
+ * @LastEditTime: 2020-08-23 13:08:06
  * @LastEditors: Please set LastEditors
 -->
 # 学习笔记
@@ -31,6 +31,13 @@
      - DocumentType:<!Doctype html>
      - ProcessingInstruction:<?a 1?>
      - CDATA:<![CDATA[]]> 
+  ```
+  - 字符引用
+  ```
+    - &#161;
+    - &amp;
+    - &lt;
+    - &quot;
   ```
 ## 浏览器API
 1. DOM API
