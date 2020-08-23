@@ -8,13 +8,19 @@
     - [2. HTML标签语义](#2-html标签语义)
     - [3. HTML语法](#3-html语法)
   - [浏览器API](#浏览器api)
+    - [1. DOM API](#1-dom-api)
+    - [2. 事件API](#2-事件api)
+    - [3. Range API](#3-range-api)
+    - [4. CSSOM](#4-cssom)
+    - [5. CSSOM View](#5-cssom-view)
+    - [6. 其他API](#6-其他api)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 <!--
  * @Author: zhy
  * @Date: 2020-06-29 05:44:41
- * @LastEditTime: 2020-08-23 13:09:19
+ * @LastEditTime: 2020-08-23 13:10:35
  * @LastEditors: Please set LastEditors
 -->
 # 学习笔记
@@ -43,9 +49,9 @@
     - &quot;
   ```
 ## 浏览器API
-1. DOM API
-2. 事件API
-3. Range API
-4. CSSOM
-5. CSSOM View
-6. 其他API
+### 1. DOM API
+### 2. 事件API
+### 3. Range API
+### 4. CSSOM
+### 5. CSSOM View
+### 6. 其他API
